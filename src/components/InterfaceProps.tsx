@@ -13,14 +13,14 @@ interface NegativePromptSchemaProps {
 interface RadioSchemaProps {
     title: string
     setData: (data: string) => void
-    data: any
+    data: string[]
     description: string
 }
 
 interface RatioAspectSchemaProps {
     title: string
     setData: (data: string) => void
-    data: any
+    data: string[]
 }
 
 interface DalleDTO extends 

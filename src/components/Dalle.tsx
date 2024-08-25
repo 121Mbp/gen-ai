@@ -17,8 +17,8 @@ const Dalle:React.FC<DalleDTO> = ({
         {
             engine.includes('dall-e-3') && (
                 <>
-                <RadioSchema title='스타일' setData={setStyle} data={styleData} />
-                <RadioSchema title='품질' setData={setQuality} data={qualityData} />
+                <RadioSchema title='스타일' setData={setStyle} data={styleData} description={''} />
+                <RadioSchema title='품질' setData={setQuality} data={qualityData} description={''} />
                 </>
             )
         }
