@@ -7,8 +7,8 @@ import {
 const Dalle:React.FC<DalleDTO> = ({ 
     setPrompt, engine, setSize, setStyle, setQuality
 }) => {
-    const styleData = [ 'Vivid', 'Natural' ]
-    const qualityData = [ 'Standard', 'HD' ]
+    const styleData = [ 'vivid', 'natural' ]
+    const qualityData = [ 'standard', 'hd' ]
     const ratioSizeData = engine.includes('dall-e-3') ? [ '1024x1024', '1792x1024', '1024x1792' ] : [ '256x256', '512x512', '1024x1024' ]
     return (
         <>

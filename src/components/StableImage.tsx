@@ -28,7 +28,7 @@ const StableImage:React.FC<StableImageDTO> = ({
         'pixel-art',
         'tile-texture'
     ]
-    const formatData = engine.includes('core') ? [ 'PNG', 'JPEG', 'WEBP' ] : [ 'PNG', 'JPEG' ]
+    const formatData = engine.includes('core') ? [ 'png', 'jpeg', 'webp' ] : [ 'png', 'jpeg' ]
     const ratioAspectData = [ '1:1', '16:9', '4:5', '5:4', '9:16' ]
     return (
         <>

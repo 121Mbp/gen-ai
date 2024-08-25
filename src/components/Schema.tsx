@@ -49,7 +49,8 @@ export const RadioSchema:React.FC<RadioSchemaProps> = ({ title, setData, data, d
 
     useEffect(() => {
         setSelectedValue(data[0])
-    }, [data])
+        setData(selectedValue)
+    }, [data, selectedValue, setData])
 
     return (
         <div className='flex flex-col space-y-2'>
@@ -100,7 +101,9 @@ export const RatioAspectSchema:React.FC<RatioAspectSchemaProps> = ({ title, setD
 
     useEffect(() => {
         setSelectedValue(data[0])
-    }, [data])
+        setData(selectedValue)
+    }, [data, selectedValue, setData])
+    
     return (
         <div className='flex flex-col space-y-2'>
             <div className='flex items-center justify-between'>

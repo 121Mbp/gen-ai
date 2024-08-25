@@ -175,6 +175,8 @@ export default function Home() {
         }
         
         try {
+            console.log(modelAPI)
+            console.log(payload)
             setLoding(true)
             setCreate3d(false)
             setGeneratedImage('')

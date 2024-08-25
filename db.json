@@ -745,6 +745,23 @@
       "foreground_ratio": 0.85,
       "cfg_scale": 4.5,
       "motion_bucket_id": 150
+    },
+    {
+      "id": "b5b59f3a-37af-48ce-b61b-a39e7cad642a.png",
+      "model": "dall-e-3",
+      "prompt": "피아노",
+      "negative_prompt": "",
+      "revised_prompt": "",
+      "aspect_ratio": "",
+      "output_format": "",
+      "size": "1024x1024",
+      "quality": "standard",
+      "style": "vivid",
+      "style_preset": "",
+      "texture_resolution": "",
+      "foreground_ratio": 0.85,
+      "cfg_scale": 1.8,
+      "motion_bucket_id": 127
     }
   ]
 }
