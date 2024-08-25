@@ -38,12 +38,12 @@ const StableImage:React.FC<StableImageDTO> = ({
         {
             engine.includes('core') ? (
                 <>
-                <RadioSchema title='스타일' setData={setStylePreset} data={styleData} />
-                <RadioSchema title='포맷' setData={setFormat} data={formatData} />
+                <RadioSchema title='스타일' setData={setStylePreset} data={styleData} description={''} />
+                <RadioSchema title='포맷' setData={setFormat} data={formatData} description={''} />
                 </>
                 
             ) : (
-                <RadioSchema title='포맷' setData={setFormat} data={formatData} />
+                <RadioSchema title='포맷' setData={setFormat} data={formatData} description={''} />
             )
         }
         </>
