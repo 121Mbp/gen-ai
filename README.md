@@ -6,7 +6,7 @@ NextJs로 생성된 데이타를 public 폴더에서 관리하도록 구현하�
 - 생성형 AI
   
 ## 링크
-[https://gen-sungsooai.netlify.app/](https://gen-x31i4bfta-121mbas-projects.vercel.app/)
+https://gen-x31i4bfta-121mbas-projects.vercel.app
 
 ## 실행
 ```bash
