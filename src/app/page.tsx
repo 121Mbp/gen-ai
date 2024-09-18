@@ -94,6 +94,10 @@ export default function Home() {
         let options = {}
         let payload
         
+        if(Number(credit) <= 0) {
+            alert('크레딧 충전을 해주세요.')
+            return
+        }
         if (!engine.includes('3d') && !engine.includes('video') && prompt == '') {
             alert('프롬프트를 입력해 주세요.')
             return
@@ -596,4 +600,3 @@ export default function Home() {
         </>
     )
 }
-

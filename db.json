@@ -762,6 +762,23 @@
       "foreground_ratio": 0.85,
       "cfg_scale": 1.8,
       "motion_bucket_id": 127
+    },
+    {
+      "id": "3a1bfa34-f687-499a-af78-d1c4e3fe7a65.png",
+      "model": "dall-e-3",
+      "prompt": "강아지",
+      "negative_prompt": "",
+      "revised_prompt": "",
+      "aspect_ratio": "",
+      "output_format": "",
+      "size": "1024x1024",
+      "quality": "standard",
+      "style": "vivid",
+      "style_preset": "",
+      "texture_resolution": "",
+      "foreground_ratio": 0.85,
+      "cfg_scale": 1.8,
+      "motion_bucket_id": 127
     }
   ]
 }
