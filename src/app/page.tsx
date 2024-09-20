@@ -41,7 +41,7 @@ export default function Home() {
     const [file, setFile] = useState<File>()
     const [textureResolution, setTextureResolution] = useState('')
     const [foregroundRatio, setForegroundRatio] = useState<number>(0.85)
-    const [credit, setCredit] = useState('')
+    const [credit, setCredit] = useState<number>(0)
     const [revised, setRevised] = useState('')
     const [list, setList] = useState<string[]>([])
     const [generatedImage, setGeneratedImage] = useState('')
@@ -68,7 +68,7 @@ export default function Home() {
             }
     
             const data = await response.json()
-            setCredit(data.credits)
+            setCredit(Math.ceil(data.credits))
         }
 
         if (engine.includes('sd')) fetchData()
@@ -94,7 +94,7 @@ export default function Home() {
         let options = {}
         let payload
         
-        if(Number(credit) <= 0) {
+        if(credit <= 0) {
             alert('크레딧 충전을 해주세요.')
             return
         }
@@ -379,7 +379,7 @@ export default function Home() {
         {
             <div className='h-full flex-col md:flex'>
                 <div className='container max-w-screen-lg flex flex-col items-start justify-between space-y-2 py-4 sm:flex-row sm:items-center sm:space-y-0 md:h-16'>
-                <h2 className='text-lg font-semibold whitespace-nowrap'>GEN AI</h2>
+                <h2 className='text-lg font-semibold whitespace-nowrap'><a href='./'>GEN AI</a></h2>
                 <div className='ml-auto flex w-full space-x-2 sm:justify-end'>
                     <Button onClick={ handleGenerate }>생성하기</Button>
                 </div>

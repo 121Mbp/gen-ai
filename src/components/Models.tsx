@@ -12,7 +12,7 @@ import {
 interface ModelsProps {
     engine: string
     setEngine: (engine: string) => void
-    credit: string
+    credit: number
 }
 
 const Models: React.FC<ModelsProps> = ({ engine, setEngine, credit }) => {
