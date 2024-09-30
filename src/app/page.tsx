@@ -94,7 +94,7 @@ export default function Home() {
         let options = {}
         let payload
         
-        if(credit <= 0) {
+        if(engine.includes('sd') && credit <= 0) {
             alert('크레딧 충전을 해주세요.')
             return
         }
